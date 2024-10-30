@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Anime ShowCase</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <body class="background"></body>
+        <h1>Anime Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#popular" class="button">Popular Animes</a></li>
+                <li><a href="#upcoming" class="button">Upcoming Animes</a></li>
+                <li><a href="#genres" class="button">Genres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="popular">
+        <h2>Popular Animes</h2>
+        <div class="anime-container">
+            <div class="anime">
+                <img src="https://res.cloudinary.com/dupstdgwz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1730228209/Attack_on_Titan_Season_1_vwpmmw.webp "alt="Attack on Titan">
+                <h3>Attack on Titan</h3>
+                <p>A gripping tale of humanity's fight against monstrous giants.</p>
+                <button class="anime-button">Learn More</button>
+            </div>
+            <div class="anime">
+                <img src="https://res.cloudinary.com/dupstdgwz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1730227351/1344303_ghknuz.jpg" alt="Demon Slayer">
+                <h3>Demon Slayer</h3>
+                <p>Join Tanjiro on his quest to save his sister and defeat demons.</p>
+                <button class="anime-button">Learn More</button>
+            </div>
+            <div class="anime">
+                <img src="https://res.cloudinary.com/dupstdgwz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1730216238/image1_r6qhwx.jpg" alt="My Hero Academia">
+                <h3>My Hero Academia</h3>
+                <p>In a world where superpowers are the norm, follow Izuku's journey.</p>
+                <button class="anime-button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="upcoming">
+        <h2>Upcoming Animes</h2>
+        <div class="anime-container">
+            <div class="anime">
+                <img src="https://res.cloudinary.com/dupstdgwz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1730227560/season-2_uvqp4j.jpg" alt="Jujutsu Kaisen Season 2">
+                <h3>Jujutsu Kaisen Season 2</h3>
+                <p>More supernatural battles await in this thrilling sequel.</p>
+                <button class="anime-button">Learn More</button>
+            </div>
+            <div class="anime">
+                <img src="https://res.cloudinary.com/dupstdgwz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1730227463/One-Piece-Wallpaper-HD-37213_yjwr7t.jpg" alt="One Piece">
+                <h3>One Piece</h3>
+                <p>Monkey D. Luffy sets off on an adventure with his pirate crew in hopes of finding the greatest treasure ever, known as the "One Piece".</p>
+                <button class="anime-button">Learn More</button>
+            </div>
+            <div class="anime">
+                <img src="https://res.cloudinary.com/dupstdgwz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1730227728/MV5BZDkwNjc0NWEtNzJlOC00N2YwLTk4MjktZGFlZDE2Y2QzOWI0XkEyXkFqcGc_._V1_FMjpg_UX1000__abhm4p.jpg" alt="Spy x Family">
+                <h3>Spy x Family</h3>
+                <p>A secret agent must create a fake family for his mission.</p>
+                <button class="anime-button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="genres">
+        <h2>Genres</h2>
+        <ul>
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>Fantasy</li>
+            <li>Romance</li>
+            <li>Sci-Fi</li>
+            <li>Horror</li>
+        </ul>
+    </section>
+    <button onclick="showAlert()">Click me for an Alert</button>
+    <script>
+        function showAlert() {
+            alert('Hello! This is your alert message!'); // Alert message
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Anime Showcase</p>
+    </footer>
+</body>
+</html>
