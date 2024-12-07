@@ -1,0 +1,701 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    color: #2c3e50; /* Dark navy text */
+    background-color: #3c6bb3; /* Light, airy background */
+    background-image: url('https://res.cloudinary.com/diesyy6ac/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1733504675/_methode_times_prod_web_bin_f02a1220-3acf-403d-891e-fbfb99ad297c_hpjx9y.jpg'); /* Main background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(79, 142, 174, 0.8); /* Light transparent background */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b171e; /* Bright blue for branding */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #2c3e50; /* Dark navy */
+    text-decoration: none;
+}
+
+.nav-btn {
+    background-image: url('images/button-bg.jpg'); /* Background for buttons */
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #ebf0f1; /* Light text */
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    display: block;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1); /* Button hover effect */
+    background-color: #5dade2; /* Softer blue on hover */
+}
+
+/* Main section styles */
+.intro {
+    padding: 120px 20px 40px; /* Padding to accommodate fixed navbar */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 10px;
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: #34495e; /* Muted dark blue */
+}
+
+.intro p {
+    font-size: 20px;
+    color: #566573; /* Muted gray */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro button {
+    background-color: #1a152c; /* Warm orange */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.intro button:hover {
+    background-color: #f5b041; /* Lighter orange */
+}
+
+/* About Japan Section */
+#about-japan {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    padding: 40px;
+    margin-top: 100px; /* To avoid overlap with the fixed navbar */
+    border-radius: 10px;
+    text-align: center;
+}
+
+#about-japan h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #2980b9; /* Bright blue heading */
+}
+
+#about-japan p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+#about-japan img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+/* Section styles */
+.section {
+    background: rgba(255, 255, 255, 0.9); /* Light section background */
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #16a085; /* Vibrant green */
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.9); /* Light footer background */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+/* Button styles */
+button {
+    background-color: #16a085; /* Green buttons */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1abc9c; /* Softer green on hover */
+}
+
+/* Carousel Section */
+.carousel-section {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3); /* Subtle transparent black for the image background */
+    color: rgb(180, 182, 193);
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Carousel Slides */
+/* Carousel Slides */
+.slide {
+    flex: 0 0 100%; /* Full width for each slide */
+    
+    width: 100%; /* Ensure full width for each slide */
+}
+
+    
+
+
+.slide.active {
+    display: block; /* Only display the active slide */
+}
+
+.slide img {
+    width: 100%; /* Set image to 100% width of the container */
+    height: auto;
+    max-height: 500px; /* Set a fixed height */
+    border-radius: 10px;
+    object-fit: cover; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Slide Caption */
+.slide-caption {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #0f8a69;
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent white */
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque white on hover */
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.carousel-btn:focus {
+    outline: none; /* Remove focus outline for better aesthetics */
+    background-color: rgba(255, 255, 255, 0.8); /* More opaque when focused */
+}
+/* Ensure buttons are visible */
+.carousel-btn left, .carousel-btn right {
+    display: block; /* Make sure the buttons are shown */
+}
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+/* Section styles for Japanese Cuisine */
+#japanese-cuisine {
+    background-color: #f9f9f9; /* Light neutral background for the cuisine section */
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#japanese-cuisine h2 {
+    font-size: 42px;
+    color: #e67e22; /* Warm orange for titles */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#japanese-cuisine p {
+    font-size: 18px;
+    color: #2c3e50; /* Dark gray text */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cuisine-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cuisine-item h3 {
+    font-size: 30px;
+    color: #e74c3c; /* Red accent for headings */
+    margin-bottom: 20px;
+}
+
+.cuisine-item p {
+    font-size: 18px;
+    color: #7f8c8d; /* Light gray text */
+    margin-bottom: 40px;
+}
+
+.cuisine-item img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+.cuisine-item ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.cuisine-item ul li {
+    margin-bottom: 10px;
+}
+/* Section styles for Japanese Technology */
+#japanese-technology {
+    background-color: #f5f5f5; /* Light background color for contrast */
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#japanese-technology h2 {
+    font-size: 42px;
+    color: #2980b9; /* Blue color for titles */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#japanese-technology p {
+    font-size: 18px;
+    color: #2c3e50; /* Dark gray text */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tech-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tech-item h3 {
+    font-size: 30px;
+    color: #e74c3c; /* Red accent for headings */
+    margin-bottom: 20px;
+}
+
+.tech-item p {
+    font-size: 18px;
+    color: #7f8c8d; /* Light gray text */
+    margin-bottom: 15px;
+}
+
+.tech-item img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+.tech-item ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.tech-item ul li {
+    margin-bottom: 10px;
+}
+/* Section styles for Japanese Culture */
+#japanese-culture {
+    background-color: #f9f9f9; /* Light color for cultural content */
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#japanese-culture h2 {
+    font-size: 42px;
+    color: #2980b9; /* Blue color for titles */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#japanese-culture p {
+    font-size: 18px;
+    color: #2c3e50; /* Dark gray text */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.culture-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.culture-item h3 {
+    font-size: 30px;
+    color: #e74c3c; /* Red accent for headings */
+    margin-bottom: 20px;
+}
+
+.culture-item p {
+    font-size: 18px;
+    color: #7f8c8d; /* Light gray text */
+    margin-bottom: 15px;
+}
+
+.culture-item img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+.culture-item ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.culture-item ul li {
+    margin-bottom: 10px;
+}
+/* Section styles for Places in Japan */
+#places-in-japan {
+    background-color: #f1f1f1; /* Light background color for the places section */
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#places-in-japan h2 {
+    font-size: 42px;
+    color: #2980b9; /* Blue color for titles */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#places-in-japan p {
+    font-size: 18px;
+    color: #2c3e50; /* Dark gray text */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.places-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.places-item h3 {
+    font-size: 30px;
+    color: #e74c3c; /* Red accent for place headings */
+    margin-bottom: 20px;
+}
+
+.places-item p {
+    font-size: 18px;
+    color: #7f8c8d; /* Light gray text */
+    margin-bottom: 15px;
+}
+
+.places-item img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Optional: If you'd like to add hover effects to the images */
+.places-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+/* Section styles for Anime in Japan */
+#anime-in-japan {
+    background-color: #f5f5f5; /* Light background color for the anime section */
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#anime-in-japan h2 {
+    font-size: 42px;
+    color: #8e44ad; /* Purple color for anime titles */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#anime-in-japan p {
+    font-size: 18px;
+    color: #2c3e50; /* Dark gray text */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.anime-item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.anime-item h3 {
+    font-size: 30px;
+    color: #e74c3c; /* Red accent for anime headings */
+    margin-bottom: 20px;
+}
+
+.anime-item p {
+    font-size: 18px;
+    color: #7f8c8d; /* Light gray text */
+    margin-bottom: 15px;
+}
+
+.anime-item img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Optional: If you'd like to add hover effects to the images */
+.anime-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+/* For tablet and small desktop (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Adjust navbar layout for smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .navbar .logo {
+        font-size: 28px;  /* Smaller logo size */
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .nav-btn {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    /* Adjust intro text for tablets */
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    /* Adjust About Japan section */
+    #about-japan h2 {
+        font-size: 28px;
+    }
+
+    #about-japan p {
+        font-size: 16px;
+    }
+
+    /* Adjust section headings */
+    .section h2 {
+        font-size: 28px;
+    }
+
+    /* Adjust image sizes for smaller screens */
+    .section img,
+    #about-japan img {
+        max-width: 90%;
+    }
+}
+
+/* For mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Adjust navbar layout for mobile screens */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 24px;  /* Smaller logo size */
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 8px 0;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .nav-btn {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    /* Adjust intro text for small screens */
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    /* Adjust About Japan section */
+    #about-japan h2 {
+        font-size: 24px;
+    }
+
+    #about-japan p {
+        font-size: 14px;
+    }
+
+    /* Adjust section headings */
+    .section h2 {
+        font-size: 24px;
+    }
+
+    /* Further adjustments for image sizes */
+    .section img,
+    #about-japan img {
+        max-width: 100%;
+    }
+
+    .nav-btn {
+        font-size: 14px;
+        width: 120px;
+    }
+}
